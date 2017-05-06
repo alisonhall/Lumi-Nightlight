@@ -36,13 +36,65 @@ router.use(express.static(path.resolve(__dirname, 'public')));
 // });
 
 
+var onMode = true;
+var autoMode = false;
+var cryingMode = false;
+var feedingMode = true;
+
+var onColour = {
+  r: 1,
+  g: 1,
+  b: 1,
+  a: 0.5,
+  h: 1,
+  s: 1,
+  v: 1,
+}
+
 // Send data from server to serial port
 io.on('connection', function(socket) {
     console.log("user connected to server");
 
-    socket.on('modeChange', function(data) {
-        console.log('M', data);
-        // port.write('M,' + data);
+    socket.on("sendModeSettings", function(data) {
+      socket.emit("receiveAutoMode", autoMode);
+      socket.emit("receiveCryingMode", cryingMode);
+      socket.emit("receiveFeedingMode", feedingMode);
+    });
+
+    socket.on("sendOnColour", function(data) {
+      socket.emit("receiveOnColour", onColour);
+    });
+
+    socket.on('autoModeChange', function(data) {
+        console.log('M,A,', data);
+        // port.write('M,A,' + data);
+        autoMode = data;
+    });
+
+    socket.on('cryingModeChange', function(data) {
+        console.log('M,C,', data);
+        // port.write('M,C,' + data);
+        cryingMode = data;
+    });
+
+    socket.on('feedingModeChange', function(data) {
+        console.log('M,F,', data);
+        // port.write('M,F,' + data);
+        feedingMode = data;
+    });
+
+    socket.on('onColourChange', function(data) {
+      onColour.r = data.r;
+      onColour.g = data.g;
+      onColour.b = data.b;
+      console.log('C,O,', data.r, ',', data.g, ',', data.b);
+      // port.write('C,O,' + data.r + ',' + data.g + ',' + data.b);
+    });
+
+    socket.on('onBrightnessChange', function(data) {
+      onColour.a = data/100;
+      console.log('B,O,', data);
+      // port.write('B,O,' + data);
     });
 
 });

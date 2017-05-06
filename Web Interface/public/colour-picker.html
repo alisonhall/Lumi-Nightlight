@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lumi Nightlight</title>
+		<meta name="viewport" content="width=device-width", initial-scale=1.0>
+		<link rel="stylesheet" href="/css/wheelcolorpicker.dark.css">
+		<link rel="stylesheet" href="/css/stylesheet.css">
+	</head>
+	<body>
+		<div class="container colour-picker">
+			<img class="backgroundImage" src="img/Pasted image at 2017_05_05 10_34 AM.png" alt="">
+			<a href="settings.html">
+        <img class="icon--arrow" src="img/_assets/icon--arrow.png" alt="">
+      </a>
+			<a href="colour-recent.html">
+				<img class="btn--recent" src="" alt="">
+			</a>
+			<a href="settings.html">
+				<img class="btn--primary" src="img/_assets/btn--primary.png" alt="">
+			</a>
+      <a href="index.html">
+        <img class="menuicon" src="img/_assets/menu icon.png" alt="">
+      </a>
+			<input type="text" name="color" id="ColorInput" value="#ffffff" data-wheelcolorpicker  data-wcp-layout="block" />
+			<div class="range-slider">
+				<label class="slider-value" for="slider">0</label>
+				<input class="slider" type="range" name="slider" value="50" min="0" max="100">
+			</div>
+
+		</div>
+
+
+		<!-- <input type="text" value="#ff8800" data-wheelcolorpicker="" data-wcp-layout="block" data-wcp-sliders="wsvap" data-wcp-cssclass="color-block" data-wcp-autoresize="false" style="display: none;"> -->
+
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.wheelcolorpicker-3.0.2.min.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
+	</body>
+</html>
