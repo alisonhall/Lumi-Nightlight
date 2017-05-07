@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="667px" viewBox="0 0 375 667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>main-screen-w-alert</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="67.0043894%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#101B46" offset="0%"></stop>
+            <stop stop-color="#163B72" offset="100%"></stop>
+        </linearGradient>
+        <text id="text-2" font-family="Avenir-Heavy, Avenir" font-size="21.6000004" font-weight="600" fill="#FFFFFF">
+            <tspan x="78.521198" y="353">my friend seems to be </tspan>
+            <tspan x="82.8843981" y="383">crying can you please </tspan>
+            <tspan x="119.701599" y="413">check on him?</tspan>
+        </text>
+        <filter x="-21.9%" y="-55.6%" width="282.3%" height="215.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0189070032   0 0 0 0 0.0476657778   0 0 0 0 0.100047832  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-screen-w-alert">
+            <rect id="Rectangle-3" fill="url(#linearGradient-1)" x="0" y="0" width="375" height="667"></rect>
+            <g id="my-friend-seems-to-b" fill-opacity="1" fill="#FFFFFF">
+                <use filter="url(#filter-3)" xlink:href="#text-2"></use>
+                <use xlink:href="#text-2"></use>
+            </g>
+            <text id="click-above-silence" font-family="Avenir-Light, Avenir" font-size="14.9899998" font-weight="300" letter-spacing="0.600000024" fill="#FFFFFF">
+                <tspan x="101.429916" y="549">click above silence alert</tspan>
+            </text>
+            <ellipse id="Oval-2" fill="#142B5C" cx="189.5" cy="289" rx="54.5" ry="3"></ellipse>
+        </g>
+    </g>
+</svg>

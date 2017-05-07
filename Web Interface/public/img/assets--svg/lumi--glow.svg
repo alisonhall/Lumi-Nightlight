@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="373px" height="350px" viewBox="0 0 373 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>lumi--glow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-74.9%" y="-78.3%" width="249.8%" height="256.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="45.8203125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-85.000000, -107.000000)" fill="#92BFFF">
+            <g id="lumi--crying" transform="translate(85.000000, 107.000000)">
+                <g id="lumi-glowing-layer">
+                    <g>
+                        <path d="M263.943005,168.373681 C263.945912,168.095343 263.947368,167.816659 263.947368,167.537634 C263.947368,124.162497 228.742811,89 185.315789,89 C141.888768,89 106.684211,124.162497 106.684211,167.537634 C106.684211,170.085393 106.805671,172.604817 107.043123,175.090445 C100.497589,173.819589 92.8503457,172.702438 91.7634066,178.588154 C91.7127293,189.864104 107.148911,199.08933 112.644086,202.015444 C113.154099,213.989151 105.7949,228.287997 104.214351,237.720922 C101.617666,253.218284 132.351167,249.65689 191.552124,263.233837 C216.187762,268.883691 238.093778,255.151424 248.602321,246.436173 C259.110865,237.720922 262.214375,241.79118 269.996735,237.720922 C277.694354,233.694985 256.56412,215.805439 262.024307,186.462332 C266.630322,183.814168 275.370815,177.84792 275.338781,170.72004 C274.537581,166.381589 268.68347,167.436923 263.943005,168.373681 Z" id="lumi--glow" filter="url(#filter-1)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="222px" height="216px" viewBox="0 0 222 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>particles-group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.404268569">
+        <g id="Artboard" transform="translate(-159.000000, -192.000000)" fill="#FFFFFF">
+            <g id="particles-group" transform="translate(159.000000, 192.000000)">
+                <circle id="particles8" cx="221" cy="48" r="1"></circle>
+                <circle id="particles7" opacity="0.279891304" cx="173.5" cy="1.5" r="1.5"></circle>
+                <circle id="particles6" opacity="0.279891304" cx="200.5" cy="161.5" r="1.5"></circle>
+                <circle id="particles5" opacity="0.497339221" cx="170.5" cy="26.5" r="1.5"></circle>
+                <circle id="particles4" opacity="0.441576087" transform="translate(152.648576, 156.648576) scale(-1, -1) rotate(-276.000000) translate(-152.648576, -156.648576) " cx="152.648576" cy="156.648576" r="1.5"></circle>
+                <circle id="particles3" transform="translate(41.648576, 29.648576) scale(-1, -1) rotate(-276.000000) translate(-41.648576, -29.648576) " cx="41.6485755" cy="29.6485755" r="1.5"></circle>
+                <circle id="particles2" opacity="0.279891304" transform="translate(1.480626, 164.333162) scale(-1, -1) rotate(-276.000000) translate(-1.480626, -164.333162) " cx="1.48062588" cy="164.333162" r="1"></circle>
+                <circle id="particles1" opacity="0.497339221" transform="translate(26.657259, 214.703516) scale(-1, -1) rotate(-276.000000) translate(-26.657259, -214.703516) " cx="26.6572587" cy="214.703516" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

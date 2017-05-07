@@ -23,6 +23,22 @@
   width: 82px;
 }
 
+.container .lumi-container {
+  position: absolute;
+}
+
+.container .lumi-menu {
+  position: fixed;
+  top: 547px;
+  left: 304px;
+  width: 82px;
+}
+
+.container .lumi-menu svg {
+  width: 82px!important;
+  height: 82px!important;
+}
+
 
 
 /***********************
@@ -31,57 +47,69 @@ HOME
 
 .container.home {
   background: #000000;
-  height: 100%;
+  height: 80vh;
 }
 
-#lumi-glowing-layer,
-#lumi-body-color,
-#lumi--eyes,
-#brow--left,
-#brow--right,
-#lumi-mouth,
-#tears-group {
+.lumi-container #lumi-glowing-layer,
+.lumi-container #lumi-body-color,
+.lumi-container #lumi--eyes,
+.lumi-container #brow--left,
+.lumi-container #brow--right,
+.lumi-container #lumi-mouth,
+.lumi-container #tears-group {
   /*fill: #6CA8FC;*/
-  fill: #FF0000;
+  /*fill: #FF0000;*/
+  /*fill: #CFFFBF;*/
+}
+
+.colour-picker .lumi-container #lumi-glowing-layer,
+.colour-picker .lumi-container #lumi-body-color,
+.colour-picker .lumi-container #lumi--eyes,
+.colour-picker .lumi-container #brow--left,
+.colour-picker .lumi-container #brow--right,
+.colour-picker .lumi-container #lumi-mouth,
+.colour-picker .lumi-container #tears-group {
+  /*fill: #6CA8FC;*/
+  /*fill: #FFFFFF;*/
   /*fill: #CFFFBF;*/
 }
 
 
-#lumi-glowing-layer {
+.lumi-container #lumi-glowing-layer {
   /*fill: #92BFFF;*/
   /*fill: #FF0000;*/
   /*opacity: 0.3;*/
 }
 
-#lumi-body-color {
+.lumi-container #lumi-body-color {
   /*fill: #6CA8FC;*/
   /*fill: #FF0000;*/
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
-#lumi--eyes {
+.lumi-container #lumi--eyes {
   /*fill: #6E90C2;*/
   /*fill: #FF0000;*/
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
-#brow--left,
-#brow--right {
+.lumi-container #brow--left,
+.lumi-container #brow--right {
   /*fill: #87B7FD;*/
   /*fill: #FF0000;*/
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
-#lumi-mouth {
+.lumi-container #lumi-mouth {
   /*fill: #6D90C2;*/
   /*fill: #FF0000;*/
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
-#tears-group {
+.lumi-container #tears-group {
   /*fill: #4990E2;*/
   /*fill: #FF0000;*/
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 
@@ -238,7 +266,7 @@ COLOUR-PICKER
 .jQWCP-wWheelCursor {
   width: 30px;
   height: 30px;
-  margin: -20px -20px;
+  margin: -23px -23px;
   border: solid 4px #fff;
   background: #fff;
 }
