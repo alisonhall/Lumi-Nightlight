@@ -1,38 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>menu icon</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <circle id="path-1" cx="37" cy="37" r="37"></circle>
-        <filter x="-41.2%" y="-31.8%" width="182.4%" height="182.4%" filterUnits="objectBoundingBox" id="filter-2">
-            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="7" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.461786685 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <radialGradient cx="54.2629063%" cy="18.147206%" fx="54.2629063%" fy="18.147206%" r="85.9396035%" gradientTransform="translate(0.542629,0.181472),scale(0.946689,1.000000),rotate(71.327913),translate(-0.542629,-0.181472)" id="radialGradient-3">
-            <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#6CA8FC" offset="100%"></stop>
-        </radialGradient>
-    </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="menu-icon" transform="translate(18.000000, 11.000000)">
-            <g>
-                <g>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use stroke="#77AEFC" stroke-width="3" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                </g>
-                <g id="lumi-copy" transform="translate(15.000000, 17.000000)">
-                    <path d="M40.1981271,18.0394729 C40.1987944,17.9762144 40.1991289,17.912877 40.1991289,17.8494624 C40.1991289,7.99147651 32.1166756,0 22.1464642,0 C12.1762529,0 4.09379959,7.99147651 4.09379959,17.8494624 C4.09379959,18.4284982 4.12168505,19.0010944 4.17620059,19.5660096 C2.67344094,19.2771793 0.917745795,19.0232816 0.668200439,20.3609441 C0.656565683,22.9236599 4.20048804,25.0203023 5.46210009,25.6853281 C5.5791916,28.4066252 3.88962694,31.6563629 3.52675588,33.8002096 C2.93059469,37.3223373 9.98655867,36.5129296 23.5782359,39.5985994 C29.2342193,40.8826571 34.2635212,37.7616872 36.6761296,35.7809484 C39.0887381,33.8002096 39.8012589,34.7252682 41.5879752,33.8002096 C43.3552364,32.8852238 38.5040425,28.8194179 39.7576219,22.15053 C40.8150959,21.5486746 42.8217858,20.1927091 42.8144311,18.5727365 C42.6304874,17.5867248 41.2864687,17.8265735 40.1981271,18.0394729 Z" id="Combined-Shape" fill="url(#radialGradient-3)"></path>
-                    <ellipse id="Oval-4" fill="#6E90C2" transform="translate(18.234286, 17.873380) rotate(-19.000000) translate(-18.234286, -17.873380) " cx="18.2342864" cy="17.8733798" rx="1.19626091" ry="1.82795699"></ellipse>
-                    <ellipse id="Oval-4-Copy" fill="#6E90C2" transform="translate(34.319546, 15.231727) scale(-1, 1) rotate(-3.000000) translate(-34.319546, -15.231727) " cx="34.319546" cy="15.2317275" rx="1.05961889" ry="1.61915994"></ellipse>
-                    <path d="M17.1205127,13.9836073 C17.1205127,13.9836073 15.1300966,15.5516372 14.8672811,17.877252 C14.7186123,18.0814506 14.3389129,17.847217 14.4603369,17.6373931 C14.8672811,15.4092458 17.1205127,13.9836073 17.1205127,13.9836073 Z" id="Path-3" fill="#9B9B9B"></path>
-                    <path d="M36.6969778,11.2928789 C36.6969778,11.2928789 35.0272755,12.6082537 34.8068072,14.5591444 C34.6820932,14.7304407 34.3635744,14.5339489 34.4654335,14.3579338 C34.8068072,12.4888057 36.6969778,11.2928789 36.6969778,11.2928789 Z" id="Path-3-Copy" fill="#9B9B9B" transform="translate(35.571315, 12.958992) scale(-1, 1) rotate(10.000000) translate(-35.571315, -12.958992) "></path>
-                    <path d="M18.4465668,26.7779731 C23.0327936,32.000905 31.3486784,29.3181172 33.5246348,27.3153604 C31.8741096,25.6626712 35.348475,22.0075442 33.5059156,20.7154534 C23.0089104,20.6205619 18.4409805,24.8083967 18.4465668,26.7779731 Z" id="Path-4" fill="#6E90C2"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 110 110" style="enable-background:new 0 0 110 110;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#filter-2);}
+	.st1{fill:#FFFFFF;stroke:#77AEFC;stroke-width:3;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="182.4%" id="filter-2" width="182.4%" x="-41.2%" y="-31.8%">
+	<feMorphology  in="SourceAlpha" operator="dilate" radius="1.5" result="shadowSpreadOuter1"></feMorphology>
+	<feOffset  dx="0" dy="7" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8.5"></feGaussianBlur>
+	<feComposite  in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+	<feColorMatrix  in="shadowBlurOuter1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.461786685 0">
+		</feColorMatrix>
+</filter>
+<title>menu icon</title>
+<desc>Created with Sketch.</desc>
+<g id="Symbols">
+	<g id="menu-icon" transform="translate(18.000000, 11.000000)">
+		<g>
+			<g>
+				<g class="st0">
+					<circle id="path-1_2_" cx="37" cy="37" r="37"/>
+				</g>
+				<g>
+					<circle id="path-1_1_" class="st1" cx="37" cy="37" r="37"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

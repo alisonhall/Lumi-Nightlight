@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="667px" viewBox="0 0 375 667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>screen--home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="67.0043894%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#101B46" offset="0%"></stop>
+            <stop stop-color="#163B72" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="screen--home">
+            <rect id="Rectangle-3" fill="url(#linearGradient-1)" x="0" y="0" width="375" height="667"></rect>
+            <text id="status" font-family="Avenir-Roman, Avenir" font-size="14.9899998" font-weight="normal" letter-spacing="0.600000024" fill="#70A1E0">
+                <tspan x="165.980655" y="371">status</tspan>
+            </text>
+            <ellipse id="Oval-2" fill="#142B5C" cx="178.5" cy="302.5" rx="51.5" ry="2.5"></ellipse>
+        </g>
+    </g>
+</svg>

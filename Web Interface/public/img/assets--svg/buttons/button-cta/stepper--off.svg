@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="100px" height="60px" viewBox="0 0 100 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="265px" height="23px" viewBox="0 0 265 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>toggle--on</title>
+    <title>stepper--off</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="52" height="26" rx="13"></rect>
-        <filter x="-3.8%" y="-7.7%" width="107.7%" height="115.4%" filterUnits="objectBoundingBox" id="filter-2">
+        <rect id="path-1" x="0.651385028" y="0" width="255.880005" height="10" rx="5"></rect>
+        <filter x="-0.8%" y="-20.0%" width="101.6%" height="140.0%" filterUnits="objectBoundingBox" id="filter-2">
             <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
             <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.448907382 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
-        <filter x="-120.0%" y="-120.0%" width="340.0%" height="340.0%" filterUnits="objectBoundingBox" id="filter-3">
-            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <circle id="path-4" cx="40.5" cy="12.5" r="12.5"></circle>
-        <filter x="-28.0%" y="-20.0%" width="156.0%" height="156.0%" filterUnits="objectBoundingBox" id="filter-5">
+        <circle id="path-3" cx="11" cy="11" r="11"></circle>
+        <filter x="-31.8%" y="-22.7%" width="163.6%" height="163.6%" filterUnits="objectBoundingBox" id="filter-4">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.887511322 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="toggle--on" transform="translate(0.000000, 5.000000)">
-            <g id="Group-2" transform="translate(24.000000, 12.000000)">
-                <g id="Group">
-                    <g id="Rectangle-2">
-                        <use fill="#ACD3FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        <g id="stepper--off">
+            <g id="Group" transform="translate(0.000000, 1.000000)">
+                <g id="Group-3" transform="translate(8.000000, 6.000000)">
+                    <g id="Rectangle-5">
+                        <use fill="#557BA6" fill-rule="evenodd" xlink:href="#path-1"></use>
                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                     </g>
                 </g>
-                <circle id="Oval-2-Copy" fill="#4D9FFF" filter="url(#filter-3)" cx="40.5" cy="12.5" r="12.5"></circle>
                 <g id="Oval-2">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
-                    <use fill="#4D9FFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#355D8A" fill-rule="evenodd" xlink:href="#path-3"></use>
                 </g>
             </g>
         </g>

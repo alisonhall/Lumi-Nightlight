@@ -1,0 +1,36 @@
+{
+  "name": "lumi-nightlight-web-interface",
+  "version": "1.0.0",
+  "description": "The web interface to go with the Arduino Lumi Nightlight project.",
+  "main": "app.js",
+  "dependencies": {
+    "socket.io": "^1.7.3",
+    "serialport": "^4.0.7",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisonhall/Lumi-Nightlight.git"
+  },
+  "keywords": [
+    "arduino",
+    "node.js",
+    "node",
+    "nightlight",
+    "lumi",
+    "humber college",
+    "research project",
+    "web interface"
+  ],
+  "author": "Alison K. Hall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alisonhall/Lumi-Nightlight/issues"
+  },
+  "homepage": "https://github.com/alisonhall/Lumi-Nightlight#readme"
+}

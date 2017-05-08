@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="974px" viewBox="0 0 375 974" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>screen--settings</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="67.0043894%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#101B46" offset="0%"></stop>
+            <stop stop-color="#163B72" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="screen--settings">
+            <rect id="Rectangle-4" fill="url(#linearGradient-1)" x="0" y="0" width="375" height="974"></rect>
+            <g id="settings__item--w-label" transform="translate(22.000000, 152.000000)">
+                <g id="settings__item">
+                    <text id="settings-mode__title" font-family="Avenir-Medium, Avenir" font-size="21.6000004" font-weight="400" fill="#FFFFFF">
+                        <tspan x="0.75599906" y="22">auto mode</tspan>
+                    </text>
+                    <text id="settings-mode__desc" font-family="Avenir-Light, Avenir" font-size="13.8800001" font-weight="300" letter-spacing="0.555570424" fill="#F7F7F7">
+                        <tspan x="-1" y="49">applying this mode allows lumi to automatically </tspan>
+                        <tspan x="-1" y="68">sense when light is needed</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="settings__item--w-label-copy" transform="translate(25.000000, 333.000000)"></g>
+            <text id="settings" font-family="Avenir-Heavy, Avenir" font-size="25.9200001" font-weight="600" letter-spacing="1.03749144" fill="#FFFFFF">
+                <tspan x="25" y="75">settings</tspan>
+            </text>
+            <g id="settings__item--w-edit" transform="translate(25.000000, 435.000000)"></g>
+            <g id="settings__item--w-edit" transform="translate(22.000000, 707.000000)">
+                <g id="settings__item">
+                    <text id="settings-mode__title" font-family="Avenir-Medium, Avenir" font-size="21.6000004" font-weight="400" fill="#FFFFFF">
+                        <tspan x="0" y="22">feeding mode</tspan>
+                    </text>
+                    <text id="settings-mode__desc" font-family="Avenir-Light, Avenir" font-size="13.8800001" font-weight="300" letter-spacing="0.555570424" fill="#F7F7F7">
+                        <tspan x="0" y="49">applying this mode displays the customized </tspan>
+                        <tspan x="0" y="68">color and brightness settings during feeding </tspan>
+                        <tspan x="0" y="87">times as well as log the data to the app</tspan>
+                    </text>
+                </g>
+            </g>
+            <path d="M25.5,99.5 L343.501572,99.5" id="Line" stroke-opacity="0.173856431" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <g id="Group-4" transform="translate(25.000000, 360.000000)">
+                <g id="Group-2" transform="translate(3.000000, 122.000000)" font-size="13.8800001" font-family="Avenir-Light, Avenir" letter-spacing="0.555570424" fill="#FFFFFF" font-weight="300">
+                    <text id="high">
+                        <tspan x="230" y="14">high</tspan>
+                    </text>
+                    <text id="lo">
+                        <tspan x="117" y="14">lo</tspan>
+                    </text>
+                    <text id="off">
+                        <tspan x="0" y="14">off</tspan>
+                    </text>
+                </g>
+                <g id="settings__item">
+                    <text id="settings-mode__title" font-family="Avenir-Medium, Avenir" font-size="21.6000004" font-weight="400" fill="#FFFFFF">
+                        <tspan x="0" y="22">crying mode</tspan>
+                    </text>
+                    <text id="settings-mode__desc" font-family="Avenir-Light, Avenir" font-size="13.8800001" font-weight="300" letter-spacing="0.555570424" fill="#F7F7F7">
+                        <tspan x="0" y="49">applying this mode allows lumi to automatically </tspan>
+                        <tspan x="0" y="68">alert the app, as well as display a customized </tspan>
+                        <tspan x="0" y="87">lamp brightness and color setting</tspan>
+                    </text>
+                </g>
+                <text id="adjust-sensitivity" font-family="Avenir-Light, Avenir" font-size="14.9899998" font-weight="300" letter-spacing="0.600000024" fill="#FFFFFF">
+                    <tspan x="3" y="212">adjust sensitivity</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

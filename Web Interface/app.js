@@ -3,6 +3,7 @@ var http = require('http');
 var path = require('path');
 var socketio = require('socket.io');
 var express = require('express');
+var SerialPort = require('serialport');
 var router = express();
 var server = http.createServer(router);
 var io = socketio.listen(server);
@@ -11,7 +12,6 @@ var io = socketio.listen(server);
 router.use(express.static(path.resolve(__dirname, 'public')));
 
 // Configure Serial Port
-var SerialPort = require('serialport');
 var port = new SerialPort('/dev/tty.usbmodem1421', {
     baudRate: 9600,
     dataBits: 8,
@@ -26,8 +26,8 @@ var port = new SerialPort('/dev/tty.usbmodem1421', {
 var status = 1;
 var offMode = false; // mode 0
 var onMode = true; // mode 1
-var autoMode = true; // mode 2
-var cryingMode = true; // mode 3
+var autoMode = false; // mode 2
+var cryingMode = false; // mode 3
 var feedingMode = true; // mode 4
 
 var currentColour = {
@@ -88,7 +88,7 @@ port.on('open', function () {
           io.emit('readMode', string[1]);
         } else if (string[0] == 'S') {
           status = string[1];
-          io.emit('receiveStatus', status);
+          io.emit('statusChange', status);
         } else if (string[0] == 'C') {
           if (string[1] == 0) {
             offColour.r = string[2]/255;
@@ -159,6 +159,12 @@ io.on('connection', function(socket) {
 
     socket.on("saveColourData", function(data) {
       onColour = currentColour;
+    });
+
+    socket.on('onModeChange', function(data) {
+        console.log('M,1,', data);
+        port.write('M,1,' + data);
+        onMode = data;
     });
 
     socket.on('autoModeChange', function(data) {

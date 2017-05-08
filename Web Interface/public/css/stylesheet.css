@@ -1,8 +1,38 @@
-.container {
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.iphone {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   width: 400px;
+}
+
+.iphone img {
+  width: 100%;
+}
+
+.menu--overlay {
+  display: none;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #0F1936;
+  opacity: 0.75;
+  position: fixed;
+  width: 350px;
+  height: 620px;
+}
+
+.container {
+  width: 350px;
   position: relative;
-  height: 650px;
+  height: 620px;
   overflow-y: scroll;
+  top: 100px;
+  left: 27px;
 }
 
 .container img {
@@ -14,6 +44,8 @@
   width: 100%;
   top: 0;
   left: 0;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .container .menuicon {
@@ -25,18 +57,97 @@
 
 .container .lumi-container {
   position: absolute;
+  left: 26px;
 }
 
 .container .lumi-menu {
   position: fixed;
-  top: 547px;
-  left: 304px;
-  width: 82px;
+  top: 618px;
+  left: 270px;
+  width: auto;
+  z-index: 10;
 }
 
-.container .lumi-menu svg {
+.container .lumi-menu > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container .lumi-happy svg,
+.container .lumi-container svg {
+  width: 300px!important;
+  height: 300px!important;
+}
+
+.lumi-menu .main-icon > img {
+  width: 112px;
+}
+
+.lumi-menu .lumi-happy svg {
   width: 82px!important;
   height: 82px!important;
+}
+
+.lumi-menu .lumi-crying svg {
+  width: 87px!important;
+  height: 87px!important;
+}
+
+.lumi-menu .main-icon {
+  cursor: pointer;
+}
+
+.lumi-menu .lumi-happy,
+.lumi-menu .lumi-crying {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+}
+
+.lumi-menu .secondary-icons {
+  position: relative;
+  display: none;
+}
+
+.lumi-menu .menu-icon--graph,
+.lumi-menu .menu-icon--settings,
+.lumi-menu .menu-icon--color-pick,
+.lumi-menu .menu-icon--lamp {
+  position: absolute;
+}
+
+.lumi-menu .menu-icon--graph {
+  top: -49px;
+  left: 45px;
+}
+
+.lumi-menu .menu-icon--settings {
+  top: -46px;
+  left: -12px;
+}
+
+.lumi-menu .menu-icon--color-pick {
+  top: 30px;
+  left: -63px;
+}
+
+.lumi-menu .menu-icon--lamp {
+  top: -3px;
+  left: -50px;
+  cursor: pointer;
+}
+
+
+
+.lumi-container .lumi-happy,
+.lumi-menu .lumi-happy {
+  display: block;
+}
+
+.lumi-container .lumi-crying,
+.lumi-menu .lumi-crying {
+  display: none;
 }
 
 
@@ -45,11 +156,19 @@
 HOME
 ***********************/
 
-.container.home {
-  background: #000000;
-  height: 80vh;
+.container.home .btn--edit {
+  top: 450px;
+  left: 55px;
 }
 
+.container.home .status-label {
+  top: 360px;
+  left: 148px;
+}
+
+.lumi-container #lumi-glow,
+.lumi-container #lumi--body-color,
+.lumi-container #lumi-eyes,
 .lumi-container #lumi-glowing-layer,
 .lumi-container #lumi-body-color,
 .lumi-container #lumi--eyes,
@@ -62,6 +181,9 @@ HOME
   /*fill: #CFFFBF;*/
 }
 
+.colour-picker .lumi-container #lumi-glow,
+.colour-picker .lumi-container #lumi--body-color,
+.colour-picker .lumi-container #lumi-eyes,
 .colour-picker .lumi-container #lumi-glowing-layer,
 .colour-picker .lumi-container #lumi-body-color,
 .colour-picker .lumi-container #lumi--eyes,
@@ -75,42 +197,6 @@ HOME
 }
 
 
-.lumi-container #lumi-glowing-layer {
-  /*fill: #92BFFF;*/
-  /*fill: #FF0000;*/
-  /*opacity: 0.3;*/
-}
-
-.lumi-container #lumi-body-color {
-  /*fill: #6CA8FC;*/
-  /*fill: #FF0000;*/
-  /*opacity: 1;*/
-}
-
-.lumi-container #lumi--eyes {
-  /*fill: #6E90C2;*/
-  /*fill: #FF0000;*/
-  /*opacity: 1;*/
-}
-
-.lumi-container #brow--left,
-.lumi-container #brow--right {
-  /*fill: #87B7FD;*/
-  /*fill: #FF0000;*/
-  /*opacity: 1;*/
-}
-
-.lumi-container #lumi-mouth {
-  /*fill: #6D90C2;*/
-  /*fill: #FF0000;*/
-  /*opacity: 1;*/
-}
-
-.lumi-container #tears-group {
-  /*fill: #4990E2;*/
-  /*fill: #FF0000;*/
-  /*opacity: 1;*/
-}
 
 
 /***********************
@@ -118,14 +204,10 @@ CRYING
 ***********************/
 
 .container.crying .btn--cta {
-  top: 494px;
-  left: 74px;
-  width: 256px;
+  top: 410px;
+  left: 36px;
 }
 
-/*.container.crying .lumi--crying {
-
-}*/
 
 
 
@@ -135,35 +217,34 @@ SETTINGS
 
 .container.settings .toggle1 {
   cursor: pointer;
-  top: 274px;
-  left: 26px;
-  width: 58px;
+  top: 225px;
+  left: 0px;
 }
 
 .container.settings .toggle2 {
   cursor: pointer;
-  top: 507px;
-  left: 26px;
-  width: 58px;
+  top: 478px;
+  left: 23px;
+}
+
+.container.settings .toggle2.on {
+  top: 460px;
 }
 
 .container.settings .toggle3 {
   cursor: pointer;
-  top: 740px;
-  left: 26px;
-  width: 58px;
+  top: 760px;
+  left: 0px;
 }
 
 .container.settings .lumi--purple {
-  top: 506px;
-  right: 32px;
-  width: 35px;
+  top: 550px;
+  left: 20px;
 }
 
 .container.settings .lumi--salmon {
-  top: 738px;
-  right: 32px;
-  width: 35px;
+  top: 820px;
+  left: 20px;
 }
 
 
@@ -179,17 +260,15 @@ COLOUR-RECENT
 .container.colour-recent .icon--arrow {
   top: 21px;
   left: 21px;
-  width: 26px;
 }
 
 .container.colour-recent .btn--picker {
-  top: 373px;
-  left: 256px;
-  width: 90px;
+  top: 340px;
+  left: 220px;
 }
 
 .container.colour-recent .btn--primary {
-  top: 618px;
+  top: 536px;
   left: 81px;
   width: 217px;
 }
@@ -204,19 +283,16 @@ COLOUR-PICKER
 .container.colour-picker .icon--arrow {
   top: 21px;
   left: 21px;
-  width: 26px;
 }
 
 .container.colour-picker .btn--recent {
-  top: 373px;
-  left: 55px;
-  width: 90px;
+  top: 340px;
+  left: 60px;
 }
 
 .container.colour-picker .btn--primary {
-  top: 985px;
-  left: 90px;
-  width: 217px;
+  top: 840px;
+  left: 55px;
 }
 
 
@@ -243,12 +319,12 @@ COLOUR-PICKER
 
 .jQWCP-wWidget.jQWCP-block {
   position: absolute;
-  top: 500px;
-  left: 40px;
+  top: 430px;
+  left: 15px;
   width: auto!important;
   margin: 0 auto!important;
   padding: 0!important;
-
+  z-index: 0;
 }
 
 .jQWCP-wWidget:focus {
@@ -276,8 +352,8 @@ COLOUR-PICKER
  width: 50%;
  margin: 0 auto;
  position: absolute;
- top: 765px;
- left: 103px
+ top: 660px;
+ left: 85px
 }
 
 .slider-value {

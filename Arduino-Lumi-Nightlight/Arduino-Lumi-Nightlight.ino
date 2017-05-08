@@ -3,7 +3,6 @@
 #include <TimeLib.h>
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
-//#include <MedianFilter.h>
 #include <SharpDistSensor.h>
 
 
@@ -19,9 +18,9 @@
 #define LIGHT_DETECTION_LIMIT             250
 
 #define MICROPHONE_PIN                    A2
-#define CRYING_DETECTION_LIMIT            700
+#define CRYING_DETECTION_LIMIT            50
 
-
+#define LED_R_PIN                         9
 
 
 // Window size of the median filter (odd number, 1 = no filtering)
@@ -47,7 +46,7 @@ int proximityReading;
 bool offMode = false; // mode 0
 bool onMode = true; // mode 1
 bool autoMode = false; // mode 2
-bool cryingMode = true; // mode 3
+bool cryingMode = false; // mode 3
 bool feedingMode = true; // mode 4
 
 bool lightDetected = true;
@@ -64,19 +63,20 @@ int onColour_g = 0;
 int onColour_b = 255;
 int onColour_a = 100;
 
-int cryingColour_r = 255;
-int cryingColour_g = 0;
-int cryingColour_b = 0;
+int cryingColour_r = 204;
+int cryingColour_g = 177;
+int cryingColour_b = 255;
 int cryingColour_a = 100;
 
-int feedingColour_r = 0;
-int feedingColour_g = 255;
-int feedingColour_b = 0;
+int feedingColour_r = 255;
+int feedingColour_g = 177;
+int feedingColour_b = 177;
 int feedingColour_a = 100;
 
 void setup()
 {
   Serial.begin(9600);
+  pinMode(LED_R_PIN, OUTPUT);
   strip.begin();
   strip.setBrightness(40);
   strip.show(); // Initialize all pixels to 'off'
@@ -84,6 +84,8 @@ void setup()
 
 void loop() // run over and over again
 {
+  digitalWrite(LED_R_PIN, HIGH);
+  
   if(!Serial) {
     firstSerialLoop = true;
     
@@ -144,14 +146,15 @@ void loop() // run over and over again
   }
 
   photocellReading = analogRead(PHOTOCELL_PIN);
-
+//  Serial.println(photocellReading);
   if(photocellReading < LIGHT_DETECTION_LIMIT) {
     lightDetected = true;
   } else {
     lightDetected = false;
   }
 
-//  microphoneReading = analogRead(MICROPHONE_PIN);
+  microphoneReading = analogRead(MICROPHONE_PIN);
+//  Serial.println(microphoneReading);
   if(microphoneReading > CRYING_DETECTION_LIMIT) {
     cryingDetected = true;
   } else {
@@ -160,7 +163,7 @@ void loop() // run over and over again
   
   // Get distance from sensor
   proximityReading = sensor.getDist();
-
+//  Serial.println(proximityReading);
   if(proximityReading < FEEDING_PROXIMITY_DETECTION) {
     proximityDetected = true;
   } else {
@@ -180,14 +183,18 @@ void loop() // run over and over again
         if(mode == 0) {
           if(modeVal == 0) {
             offMode = false;
+            onMode = true;
           } else {
             offMode = true;
+            onMode = false;
           }
         } else if(mode == 1) {
           if(modeVal == 0) {
             onMode = false;
+            offMode = true;
           } else {
             onMode = true;
+            offMode = false;
           }
         } else if (mode == 2) {
           if(modeVal == 0) {
@@ -208,9 +215,6 @@ void loop() // run over and over again
             feedingMode = true;
           }
         }
-
-        // prevMode = mode;
-        // colorWipe(strip.Color(0, 0, 0), 20);
 
       } else if (received == 'C') {
         int mode = Serial.parseInt();
